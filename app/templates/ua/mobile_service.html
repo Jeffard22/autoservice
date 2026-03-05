@@ -1,0 +1,158 @@
+{% extends "ua/base.html" %}
+
+{% block title %}Виїзний автосервіс у Києві{% endblock %}
+
+{% block content %}
+
+<section class="page-header">
+  <div class="container">
+    <h1>Виїзний автосервіс</h1>
+    <p class="subtitle">Ми приїжджаємо до вас у Києві та області</p>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <h2>Що ми робимо</h2>
+<div class="accordion" id="servicesAccordion">
+
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#service1">
+
+🚗 Компʼютерна діагностика авто
+</button>
+</h2>
+
+<div id="service1"
+class="accordion-collapse collapse"
+data-bs-parent="#servicesAccordion">
+
+<div class="accordion-body">
+Проводимо повну комп'ютерну діагностику автомобіля:
+<ul>
+<li>зчитування помилок ECU</li>
+<li>аналіз параметрів двигуна</li>
+<li>перевірка датчиків</li>
+<li>перевірка турбіни та паливної системи</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#service2">
+
+🛠 Заміна рідин, фільтрів, свічок
+</button>
+</h2>
+
+<div id="service2"
+class="accordion-collapse collapse"
+data-bs-parent="#servicesAccordion">
+
+<div class="accordion-body">
+Виконуємо базове технічне обслуговування:
+<ul>
+<li>заміна моторного масла</li>
+<li>заміна повітряного фільтра</li>
+<li>заміна паливного фільтра</li>
+<li>заміна свічок запалювання</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#service3">
+
+🧠 Зчитування та аналіз помилок ECU
+</button>
+</h2>
+
+<div id="service3"
+class="accordion-collapse collapse"
+data-bs-parent="#servicesAccordion">
+
+<div class="accordion-body">
+Поглиблений аналіз електроніки авто:
+<ul>
+<li>помилки двигуна</li>
+<li>помилки коробки передач</li>
+<li>ABS / ESP</li>
+<li>системи комфорту</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#service4">
+
+⚙️ Налаштування та базові роботи
+</button>
+</h2>
+
+<div id="service4"
+class="accordion-collapse collapse"
+data-bs-parent="#servicesAccordion">
+
+<div class="accordion-body">
+Виконуємо базові налаштування систем:
+<ul>
+<li>адаптація дросельної заслінки</li>
+<li>скидання сервісного інтервалу</li>
+<li>кодування функцій</li>
+<li>базова адаптація ECU</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+
+</section>
+
+<section class="page-section dark">
+  <div class="container">
+    <h2>Як це працює</h2>
+    <ol class="steps">
+      <li>Ви пишете в Telegram</li>
+      <li>Узгоджуємо час і місце</li>
+      <li>Приїжджаємо до вас</li>
+      <li>Виконуємо роботи</li>
+    </ol>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <h2>Готові записатись?</h2>
+    <a class="btn btn-danger btn-lg" href="https://t.me/YOUR_BOT_USERNAME" target="_blank">
+      Записатись у Telegram
+    </a>
+  </div>
+</section>
+
+{% endblock %}

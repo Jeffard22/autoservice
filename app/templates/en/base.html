@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}AUTO SERVICE{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="logo">AUTO<span>SERVICE</span></div>
+        <nav>
+            <a href="/en">Home</a>
+            <a href="/en/mobile-service">Mobile Service</a>
+            <a href="/en/chiptuning">Chiptuning</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+<footer class="footer">
+    <p>© AUTO SERVICE • Kyiv region</p>
+</footer>
+
+</body>
+</html>
